@@ -14,13 +14,14 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Gotu:300,300i,400,400i,500,500i,700,700i|Dancing+Script:300,300i,400,400i,500,500i,700,700i|Sacramento:300,300i,400,400i,500,500i,700,700i|Parisienne:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> -->
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -51,8 +52,7 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         
       // Output the result in an element with id="demo"
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m ";
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "+ minutes + "m ";
         
       // If the count down is over, write some text 
       if (distance < 0) {
@@ -62,46 +62,86 @@
     }, 1000);
   </script>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <object data="../../bg2.svg" class="background rellax" data-aos="fade-down" data-aos-delay="500" data-rellax-speed="1"> </object>
+  <object data="../../lbg2.svg" class="borders"> </object>
 
-      <h1 class="logo"><a href="index.html">Dhani<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/dhani.svg" alt="" class="img-fluid"></a> -->
+  <object data="../../green_leaf.svg" class="green_leaf rellax" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="5"> </object>
+  <object data="../../violet_leaf.svg" class="violet_leaf rellax" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="5"> </object>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Directions</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
 
-      <!-- <a href="#contact" class="get-started-btn scrollto">Get Direction</a> -->
-
+  <!-- ======= Home and first page Section ======= -->
+  <section> 
+    <div class="ganesji-container rellax" data-aos="zoom-in" data-rellax-speed="10">
+      <img class="ganeshji" src="assets/img/ganesh.svg"/>
+      <br>
+      <h2>|| ॐ श्री गणेशाय नमः ||</h2>
+      <br>
+      <br>
+      <p>वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।</p>
+      <p>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-      <img src="assets/img/dhani.svg" class="img-fluid" alt="Responsive image" width="50%">
-      <div></div>
-      <h2>We are getting married in</h2>
-      <h1 id="countdown"></h1>
-    </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
+
+    <!-- ======= Video Section ======= -->
+    <section class="container-fluid p-0">
+      <div class="video-wrapper">
+        <object class="topImg" data="assets/img/logo_black.svg"></object>
+        <video class="video-player" autoplay="true" loop="true"><source src="../../bg2.mp4"/></video>
+      </div>
+    </section>
+
+    <!-- ======= Main Invitation Section ======= -->
+    <section id="main_invitation" class="main_invitation">
+      <div class="container" data-aos="zoom-in">
+        <div class="main_headline">
+          <h2>Mrs Asha and Mr Sudhir Kumar</h2>
+          <br>
+          <p>cordially invite </p>
+          <br>
+          <h2 id="personal_name"></h2>
+          <p>to grace wedding of their beloved daugther</p>
+          <br>
+
+          <object data="../../female.svg" class="female" data-aos="fade-left" data-aos-duration="2000" data-rellax-speed="1"> </object>
+          <h1 style="text-align: left;">Nidhi Chauhan</h1>
+          
+          <p>&</p>
+          
+          <object data="../../male.svg" class="male" data-aos="fade-right" data-aos-duration="2000" data-rellax-speed="1"> </object>
+          <h1 style="text-align: right;">Ankit Kumar</h1>
+          
+          <p>son of</p>
+          <h2>Mrs and Mr Kurchu Kumar</h2>
+          <!-- <object data="../../bird_1.svg" class="bird_1 rellax" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="3"> </object> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Image slideshow Section ======= -->
+    <div class="hero2">
+      <div class="owl-carousel" data-aos="fade-up">
+        <h1></h1>
+        <div class="slide_items"><img src="assets/img/bg1.jpg" alt=""></div>
+        <div class="slide_items"><img src="assets/img/bg2.jpg" alt=""></div>
+        <div class="slide_items"><img src="assets/img/bg3.jpg" alt=""></div>
+        <!-- <div class="slide_items"><img src="assets/img/bg4.jpg" alt=""></div>
+        <div class="slide_items"><img src="assets/img/bg5.jpg" alt=""></div>
+        <div class="slide_items"><img src="assets/img/bg6.jpg" alt=""></div>
+        <div class="slide_items"><img src="assets/img/bg7.jpg" alt=""></div> -->
+      </div>
+
+      <div class="timer" data-aos="fade-up">
+        <h2>We are getting married in</h2>
+        <h1 id="countdown"></h1>
+      </div>
+      
+    </div>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
@@ -121,45 +161,82 @@
             </h2>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Function details Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
 
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-receipt"></i>
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-images"></i>
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-shield"></i>
-              <h4>Beatae veritatis</h4>
-              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-            </div>
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/functions/engagement.png" class="testimonial-img" alt="">
+            <h3>Engagement</h3>
+            <h4>11AM 14th February 2021</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/functions/haldi.png" class="testimonial-img" alt="">
+            <h3>Haldi Ceremony</h3>
+            <h4>11AM 15th March 2021</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/functions/barat.png" class="testimonial-img" alt="">
+            <h3>Reception of Bharat</h3>
+            <h4>7PM 15th March 2021</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/functions/doli.png" class="testimonial-img" alt="">
+            <h3>Doli</h3>
+            <h4>7AM 16th March 2021</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
           </div>
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section>
+
+    <!-- ======= RSVP Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>RSVP</h3>
+          <br>
+          <br>
+          <br>
+          <marquee width="100%" direction="left"> Jay Kumar <span> Neeraj Rajput </span> Charul Singh</marquee>
+          <marquee width="100%" direction="right"><span>Samarth Chauhan</span> Parul chauhan </marquee>
+          <marquee width="100%" direction="left"> Smt. Veerbala <span> Sh. Chandraveer Singh </span> Sh. Yashweer Singh <span> Sh. Sanjeev Singh </span> Sh. Puneet Singh </marquee>
+          <marquee width="100%" direction="right"> <span> Anvi Chauhan </span> Rudraksh Chauhan <span> Tanishk Chauhan </span> </marquee>
+        </div>
+
+      </div>
+    </section>
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -219,141 +296,10 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3>Voluptatem dignissimos provident quasi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-simple-smile"></i>
-                    <span data-toggle="counter-up">65</span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span data-toggle="counter-up">85</span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-clock-time"></i>
-                    <span data-toggle="counter-up">12</span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-award"></i>
-                    <span data-toggle="counter-up">15</span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+    </section>End Services Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <!-- <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -438,9 +384,9 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- ======= Direction Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -450,7 +396,7 @@
         </div>
 
         <div>
-          <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=772&amp;height=508&amp;hl=en&amp;q=Mangal%20Lipi%20Farm%20House%20Sahaspur%20ring%20road,%20Genda%20Jud,%20Uttar%20Pradesh+(Mangal%20Lipi%20Farm%20House)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.add-map.net/'>google maps widget dreamweaver</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=ccb9477cde470fd65e04779f1bddc3f34b287dd6'></script>
+          <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=772&amp;height=508&amp;hl=en&amp;q=Mangal%20Lipi%20Farm%20House%20Sahaspur%20ring%20road,%20Genda%20Jud,%20Uttar%20Pradesh+(Mangal%20Lipi%20Farm%20House)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
 
         <div class="row mt-5">
@@ -461,7 +407,7 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>SH-49, Sahaspur ring road, Genda Jud, Uttar Pradesh 246745</p>
+                <p>SH-49, Sahaspur ring road, Uttar Pradesh 246745</p>
               </div>
             </div>
 
@@ -482,7 +428,26 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+
+    <!-- ======= End invite from Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">    
+        <div class="row no-gutters">
+          
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>A Cordial Invitation From</h3>
+              <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+              <h2>Smt. Asha Rajput & Sh. Sudhir Kumar</h2>
+              <p>
+                RZF-730, Dwarka sector 8, New Delhi 110075
+              </p>
+            </div><!-- End .content-->
+          </div>
+        </div>    
+      </div>
+    </section>
 
   </main><!-- End #main -->
 
@@ -502,19 +467,61 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <object data="../../fbg.svg" class="footer_border"> </object>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/rellax.min.js"></script>  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+
+      var slider = tns({
+                  container: '.slide_wrapper',
+                  items: 3,
+                  slideBy: 'page',
+                  autoplay: true,
+                  loop: true,
+                  control: false
+                });
+  </script> -->
+
+
+  <script>
+    var rellax = new Rellax('.rellax');
+
+    $(window).on("load resize scroll", function() {
+      $(".bg-static").each(function(){
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+        console.log(leftPosition)
+        if (leftPosition < 100)  {$(this).find(".bg-move").css({ left: leftPosition });}
+      });
+    });
+
+    $(window).on('load resize scroll', function() {
+      $('.bg-static').each(function() {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+          $(this)
+            .find('.bg-move')
+            .css({ left: leftPosition });
+      });
+    });
+
+    document.getElementById("personal_name").innerHTML = window.location.href.split('?')[1].replace("_", " ");
+  </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

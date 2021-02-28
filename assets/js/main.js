@@ -1,9 +1,3 @@
-/**
-* Template Name: Gp - v2.2.0
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -150,19 +144,20 @@
   });
 
   // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
+  $(".owl-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
+    center: true,
     responsive: {
       0: {
-        items: 2
+        items: 1
       },
       768: {
-        items: 4
+        items: 3
       },
-      900: {
-        items: 6
+      1000: {
+        items: 1
       }
     }
   });
