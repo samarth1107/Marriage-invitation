@@ -510,13 +510,13 @@ section {
   padding-bottom: 40px;
 }
 
-.section-title h2 {
-  font-size: 35px;
+.section-title h4{
+  font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Dancing Script";
 }
 
 
@@ -675,12 +675,7 @@ section {
 .cta {
   padding: 60px 0;
   height: 100vh;
-}
-
-.cta h3 {
-  color: #fff;
-  font-size: 400%;
-  font-weight: 700;
+  font-family: 'Dancing Script';
 }
 
 .cta marquee {
@@ -842,40 +837,34 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts .content {
-  padding: 30px 0;
+
+.counts .content h3 {
+  font-size: 300%;
+  font-weight: 700;
   font-family: 'Dancing Script';
 }
 
-.counts .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #ffffff;
+.counts .content h2 {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+  color: #ffc451;
+  font-family: 'Dancing Script';
 }
 
 .counts .content p {
+  font-size: 120%;
   margin-bottom: 0;
+  text-align: center;
+  font-family: 'Dancing Script';
+  color: #ffc451;
 }
 
 .counts .image {
   background: url("../img/invite.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
-}
-
-@media (max-width: 991px) {
-  .counts .image {
-    text-align: center;
-  }
-  .counts .image img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -971,90 +960,6 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
-}
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #151515;
-  margin: 0 3px;
-  padding-top: 7px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.8);
-  display: inline-block;
-  transition: ease-in-out 0.3s;
-  color: #ffc451;
-}
-
-.team .member .social a:hover {
-  color: #fff;
-  background: #ffc451;
-}
-
-.team .member .social i {
-  font-size: 18px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #151515;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-  bottom: 15px;
 }
 
 /*--------------------------------------------------------------
