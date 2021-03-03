@@ -188,9 +188,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #slider_area {
+  min-height: 100vh;
   z-index: 1;
   position: relative;
-  top: 0;
+  top: 20vh;
 }
 
 /*--------------------------------------------------------------
@@ -699,11 +700,19 @@ section {
   padding: 60px 0;
 }
 
-.main_invitation > object{
+.main_invitation .topImg{
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10vh;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
   height: 50vw;
+  display: block;
+}
+
+.main_invitation .date_card{
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  width: 100%;
   display: block;
 }
 
