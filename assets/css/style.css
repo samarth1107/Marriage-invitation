@@ -11,9 +11,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #020202;
-  height: 120vh;
   background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(2, 2, 2, 0.8)), url("../img/video_bg.gif") fixed center;
-  background-size: cover;
+  background-size: 200vw;
 }
 
 #main {   
