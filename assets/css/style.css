@@ -10,11 +10,10 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #d6d6d6;
+  color: #020202;
   height: 100vh;
-  background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(0, 0, 0, 0.8)), url("../img/video_bg.gif") fixed center;
+  background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(2, 2, 2, 0.8)), url("../img/video_bg.gif") fixed center;
   background-size: cover;
-  overflow-x: hidden;
 }
 
 #main {   
@@ -163,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .chevron_container {
-  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .chevron {
-  /* bottom: 8vh; */
   width: 28px;
   height: 8px;
   opacity: 0;
